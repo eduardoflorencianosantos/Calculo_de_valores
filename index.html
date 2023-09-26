@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Valores</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function somar(){
+            resultado.value = parseInt(numero1.value) + parseInt(numero2.value);
+        }
+
+        function diminuir(){
+            resultado.value = parseInt(numero1.value) - parseInt(numero2.value);
+        }
+
+        function multiplicar(){
+            resultado.value = parseInt(numero1.value) * parseInt(numero2.value);
+        }
+
+        function dividir(){
+            if(numero2.value == 0){
+                alert("Não divida nenhum número por zero!");
+            }
+
+            else {
+                resultado.value = parseFloat(numero1.value) / parseFloat(numero2.value);
+            }
+        }
+    </script>
+    <h1>Cálculo de Valores</h1>
+    <p>Valor 1: </p><input type="text" id="numero1" value="0"><br>
+    <p>Valor 2: </p><input type="text" id="numero2" value="0"><br>
+    <input type="button" value="Somar" onclick="somar()">
+    <input type="button" value="Diminuir" onclick="diminuir()">
+    <input type="button" value="Multiplicar" onclick="multiplicar()">
+    <input type="button" value="Dividir" onclick="dividir()"><br>
+    <p>Resultado: </p><input type="text" id="resultado" value="0">
+</body>
+</html>
