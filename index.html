@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cálculo de Valores</title>
 </head>
+
 <body>
     <script type="text/javascript">
-        function somar(){
+        function somar() {
             resultado.value = parseInt(numero1.value) + parseInt(numero2.value);
         }
 
-        function diminuir(){
+        function diminuir() {
             resultado.value = parseInt(numero1.value) - parseInt(numero2.value);
         }
 
-        function multiplicar(){
+        function multiplicar() {
             resultado.value = parseInt(numero1.value) * parseInt(numero2.value);
         }
 
-        function dividir(){
-            if(numero2.value == 0){
+        function dividir() {
+            if (numero2.value == 0) {
                 alert("Não divida nenhum número por zero!");
             }
 
@@ -38,4 +40,5 @@
     <input type="button" value="Dividir" onclick="dividir()"><br>
     <p>Resultado: </p><input type="text" id="resultado" value="0">
 </body>
+
 </html>
